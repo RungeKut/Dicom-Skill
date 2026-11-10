@@ -2,7 +2,8 @@
 
 Модули: io (чтение и сортировка серий), montage (обзорные листы),
 asymmetry (зеркальные карты право/лево), measure (мм-сетки),
-gifstack (динамика из фазовых серий), report (PDF-отчёт).
+gifstack (динамика из фазовых серий), pano (панорамы КЛКТ по дуге),
+report (PDF-отчёт).
 Закон базы — knowledge/00_ПРАВИЛА.md; грабли — 30_*.
 """
 import os
@@ -24,5 +25,6 @@ from .montage import montage, save_slices
 from .asymmetry import midline_col, diff_map, top_blobs, asymmetry_report
 from .measure import grid_panel, hstack, vstack
 from .gifstack import phase_slices, cine_slices, build_gif
+from .pano import panorama
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
